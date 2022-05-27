@@ -45,3 +45,17 @@ input[class="search-button"] {
 	border-radius: 4px;
 	border: 1px solid #28A644;
 }
+
+.heading {
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+.body-text {
+	float: left;
+	width: 50%;
+}
+
+.inline-text {
+	float: left;
+}
