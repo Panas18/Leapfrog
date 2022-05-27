@@ -51,7 +51,7 @@ input[class="search-button"] {
 	margin-top: 30px;
 }
 
-.color-block{
+.color-block {
 	margin-left: 150px;
 	width: 525px;
 }
@@ -98,15 +98,38 @@ input[class="search-button"] {
 	background-color: #ABB5BE;
 }
 
-.success{
+.success {
 	background-color: #28A745;
 }
-.danger{
+
+.danger {
 	background-color: #DC3545;
 }
-.warning{
+
+.warning {
 	background-color: #FFC107;
 }
-.info{
+
+.info {
 	background-color: #17A2B8;
+}
+
+.gray600 {
+	background-color:#6c757d ;
+}
+
+.gray700 {
+	background-color:#495057 ;
+}
+
+.gray800 {
+	background-color:#343a40 ;
+}
+
+.gray900 {
+	background-color:#212529 ;
+}
+
+footer{
+	height: 200px;
 }
