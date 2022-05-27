@@ -69,7 +69,7 @@ input[class="search-button"] {
 	float: left;
 	width: 160px;
 	height: 70px;
-	border-radius: 5px;
+	border-radius: 8px;
 	margin-right: 20px;
 }
 
@@ -96,4 +96,17 @@ input[class="search-button"] {
 
 .secondary-color-light {
 	background-color: #ABB5BE;
+}
+
+.success{
+	background-color: #28A745;
+}
+.danger{
+	background-color: #DC3545;
+}
+.warning{
+	background-color: #FFC107;
+}
+.info{
+	background-color: #17A2B8;
 }
