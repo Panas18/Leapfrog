@@ -247,10 +247,35 @@ input[class="search-button"] {
 }
 
 .col2 {
-	margin-left: 40px;
+	margin-left: 50px;
 	float: left;
-	background-color: yellow;
 	width: auto;
+	margin-top: -8px;
+	outline: 1px solid red;
+}
+
+.placeholder-input {
+	outline: 1px solid red;
+}
+
+.input-row {
+	outline: 1px solid blue;
+}
+
+.menu {
+	padding-top: 20px;
+	outline: 5px solid blue;
+}
+
+select {
+	width: 100%;
+	height: 35px;
+}
+
+input[placeholder="Placeholder"] {
+	width: 350px;
+	height: 35px;
+
 }
 
 footer {
