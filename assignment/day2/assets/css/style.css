@@ -308,7 +308,7 @@ select {
   accent-color: #7749F8;
 }
 
-.mov-20-left{
+.mov-20-left {
   margin-left: -20px;
 }
 
@@ -318,8 +318,37 @@ select {
   margin-top: -20px;
 }
 
-.clear{
-  clear:left
+.clear {
+  clear: left
+}
+
+.validation {
+  margin-top: 60px;
+}
+
+.validation>h3 {
+  font-weight: lighter;
+}
+
+.validation>h3 {
+  margin-bottom: 5px;
+}
+
+.validation-input>input {
+  width: 350px;
+  height: 35px;
+  border-radius: 4px;
+  border-width: 2px;
+}
+
+.validation-success>input {
+  border-style: solid;
+  border-color: #28A745;
+}
+
+.validation-error>input {
+  border-style: solid;
+  border-color: #DC3545;
 }
 
 footer {
