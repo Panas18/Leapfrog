@@ -254,18 +254,11 @@ input[class="search-button"] {
 	outline: 1px solid red;
 }
 
-.placeholder-input {
-	outline: 1px solid red;
-}
 
 .input-row {
-	outline: 1px solid blue;
+	outline: 2px solid blue;
 }
 
-.menu {
-	padding-top: 20px;
-	outline: 5px solid blue;
-}
 
 select {
 	width: 100%;
