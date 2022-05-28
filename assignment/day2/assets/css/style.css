@@ -360,14 +360,14 @@ select {
 }
 
 .center-table td, th {
-  border-bottom: 1px solid #ddd;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.center-table tr:first-child{
+.center-table tr:first-child {
   border-top: 1px solid #ddd;
 }
+
 .center-table td:first-child {
   font-weight: bolder;
   padding-right: 20px;
@@ -407,6 +407,9 @@ select {
   color: #7749F8;
 }
 
+.center-cards {
+  margin-top: 80px;
+}
 
 footer {
   float: left;
