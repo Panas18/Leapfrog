@@ -378,6 +378,33 @@ select {
   background-color: #f2f2f2;
 }
 
+.nav-button {
+  float: right;
+  margin-top: 10px;
+
+}
+
+.btn-right {
+  height: 40px;
+  border-radius: 4px;
+  width: 40px;
+  border-style: solid;
+  border-color: #DFE3E6;
+  border-width: 1px;
+  color: #AEB9C1;
+  background-color: white;
+}
+
+.primary-btn {
+  color: white;
+  background-color: #7749F8;
+}
+
+.outline-btn {
+  color: #7749F8;
+}
+
+
 footer {
   float: left;
   width: 100%;
