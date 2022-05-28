@@ -1,294 +1,326 @@
 .navigation {
-	background-color: #F9F9FB;
-	height: 70px;
+  background-color: #F9F9FB;
+  height: 70px;
 }
 
 .navigation .logo {
-	position: absolute;
-	margin-top: 20px;
-	margin-left: 150px;
-	font-size: 20px;
-	font-weight: 900;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 
 a {
-	text-decoration: none;
-	color: black;
-	font-weight: lighter;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
 }
 
 .navigation .nav-links {
-	float: left;
-	margin-left: 100px;
-	margin-top: 12px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 12px;
 }
 
 ul.nav-links>li {
-	display: inline-block;
-	padding-left: 10px;
-	font-weight: lighter;
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: lighter;
 }
 
 .navigation .nav-search {
-	float: right;
-	margin-top: 20px;
-	margin-right: 150px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 150px;
 }
 
 input[class="search-input"] {
-	width: 130px;
-	height: 25px;
-	border-style: groove;
-	border-width: 1px;
-	border-radius: 4px;
+  width: 130px;
+  height: 25px;
+  border-style: groove;
+  border-width: 1px;
+  border-radius: 4px;
 }
 
 input[class="search-button"] {
-	width: 70px;
-	height: 31px;
-	color: #28A664;
-	border-radius: 4px;
-	border: 1px solid #28A644;
+  width: 70px;
+  height: 31px;
+  color: #28A664;
+  border-radius: 4px;
+  border: 1px solid #28A644;
 }
 
 
 .heading {
-	margin-left: 150px;
-	margin-top: 30px;
+  margin-left: 150px;
+  margin-top: 30px;
 }
 
 .body-text {
-	float: left;
-	width: 50%;
-	position: relative;
+  float: left;
+  width: 50%;
+  position: relative;
 }
 
 .inline-text {
-	float: right;
-	width: 50%;
+  float: right;
+  width: 50%;
 }
 
 .float-left {
-	float: left
+  float: left
 }
 
 .full {
-	float: left;
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 
 .color-block {
-	margin-left: 150px;
-	width: 525px;
+  margin-left: 150px;
+  width: 525px;
 }
 
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .light {
-	font-weight: lighter;
+  font-weight: lighter;
 }
 
 .font12 {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .color {
-	float: left;
-	width: 160px;
-	height: 70px;
-	border-radius: 8px;
-	margin-right: 20px;
+  float: left;
+  width: 160px;
+  height: 70px;
+  border-radius: 8px;
+  margin-right: 20px;
 }
 
 .tabs-table {
-	border-radius: 8px;
-	border-collapse: collapse;
+  border-radius: 8px;
+  border-collapse: collapse;
 }
 
 .tab-table {
-	width: 100px;
-	height: 30px;
+  width: 100px;
+  height: 30px;
 }
 
 .light {
-	font-weight: lighter;
+  font-weight: lighter;
 }
 
 .primary-text {
-	color: #7749F8;
+  color: #7749F8;
 }
 
 .primary {
-	background-color: #7749F8;
+  background-color: #7749F8;
 }
 
 
 .primary-dark {
-	background-color: #5227CC;
+  background-color: #5227CC;
 }
 
 .primary-light {
-	background-color: #EBE5FC;
+  background-color: #EBE5FC;
 }
 
 
 .secondary {
-	background-color: #6C747C;
+  background-color: #6C747C;
 }
 
 .secondary-dark {
-	background-color: #54595E;
+  background-color: #54595E;
 }
 
 .secondary-light {
-	background-color: #ABB5BE;
+  background-color: #ABB5BE;
 }
 
 .success {
-	background-color: #28A745;
+  background-color: #28A745;
 }
 
 .danger {
-	background-color: #DC3545;
+  background-color: #DC3545;
 }
 
 .warning {
-	background-color: #FFC107;
+  background-color: #FFC107;
 }
 
 .info {
-	background-color: #17A2B8;
+  background-color: #17A2B8;
 }
 
 .gray600 {
-	background-color: #6c757d;
+  background-color: #6c757d;
 }
 
 .gray700 {
-	background-color: #495057;
+  background-color: #495057;
 }
 
 .gray800 {
-	background-color: #343a40;
+  background-color: #343a40;
 }
 
 .gray900 {
-	background-color: #212529;
+  background-color: #212529;
 }
 
 .container {
-	margin-left: 150px;
-	margin-top: 30px;
+  margin-left: 150px;
+  margin-top: 30px;
 }
 
 .heading-text {
-	font-size: 40px;
+  font-size: 40px;
 }
 
 .btn-table {
-	float: left;
-	width: 100%
+  float: left;
+  width: 100%
 }
 
 #btn-table td {
-	padding: 20px 40px 20px 40px;
+  padding: 20px 40px 20px 40px;
 }
 
 
 
 .table-btn {
-	text-align: center;
-	border: none;
-	font-weight: 700;
-	color: white;
-	width: 80px;
-	height: 31px;
-	border-radius: 4px;
+  text-align: center;
+  border: none;
+  font-weight: 700;
+  color: white;
+  width: 80px;
+  height: 31px;
+  border-radius: 4px;
 }
 
 
 .primary-o {
-	border-color: #7749F8;
-	color: #7749f8;
-	border: 1px solid #7749f8;
+  border-color: #7749F8;
+  color: #7749f8;
+  border: 1px solid #7749f8;
 }
 
 .secondary-o {
-	border-color: #6C747C;
-	color: #6C747C;
-	border: 1px solid #6C747C;
+  border-color: #6C747C;
+  color: #6C747C;
+  border: 1px solid #6C747C;
 }
 
 
 .col1 {
-	float: left;
-	width: 30%;
+  float: left;
+  width: 30%;
 }
 
 .nav-list {
-	list-style: none;
+  list-style: none;
 }
 
 .nav-list>li {
-	border: 1px solid #DFE3E6;
-	margin-left: -40px;
-	padding: 15px;
+  border: 1px solid #DFE3E6;
+  margin-left: -40px;
+  padding: 15px;
 }
 
 .nav-list>li:hover {
-	background-color: #7749F8;
+  background-color: #7749F8;
 }
 
 .nav-list>li>a:hover {
-	color: white;
+  color: white;
 }
 
 .col2 {
-	margin-left: 50px;
-	float: left;
-	width: auto;
-	margin-top: -8px;
-	outline: 1px solid red;
+  margin-left: 50px;
+  float: left;
+  width: auto;
+  margin-top: -8px;
+  outline: 1px solid red;
 }
 
 input[placeholder="Placeholder"] {
-	width: 350px;
-	height: 35px;
+  width: 350px;
+  height: 35px;
 
 }
 
 .pad-top-20 {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 select {
-	width: 100%;
-	height: 35px;
+  width: 350px;
+  height: 35px;
 }
 
-.textarea {
-	position: absolute;
+.checkboxes {
+  float: left;
 }
 
-/* textarea{
-	width:175%;
-	height: 100px;
-} */
+.checkboxes-row {
+  float: left
+}
 
+.checkboxes-inline {
+  float: left;
+  margin-left: 60px;
+  width: auto;
+}
+
+.checkbox-list {
+  list-style: none;
+}
+
+.checkbox-list>li {
+  margin-left: -44px;
+  font-size: 12px;
+}
+
+.checkbox-list>li>input {
+  accent-color: #7749F8;
+}
+
+.checkbox-inline {
+  list-style: none;
+}
+
+.checkbox-inline>li {
+  margin-left: -44px;
+  font-size: 12px;
+}
+
+.checkbox-inline>li>input {
+  accent-color: #7749F8;
+}
+
+.mov-20-left{
+  margin-left: -20px;
+}
+
+.checkbox-inline>li {
+  display: inline-block;
+  padding: 20px;
+  margin-top: -20px;
+}
 
 footer {
-	float: left;
-	width: 100%;
-	height: 200px;
-}
-
-.input-row {
-	outline: 2px solid blue;
-}
-
-.textarea {
-	outline: 2px solid green;
+  float: left;
+  width: 100%;
+  height: 200px;
 }
