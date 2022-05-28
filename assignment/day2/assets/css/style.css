@@ -182,7 +182,9 @@ input[class="search-button"] {
 .container {
   margin-left: 150px;
   margin-top: 30px;
+  margin-right: 150px;
 }
+
 
 .heading-text {
   font-size: 40px;
@@ -349,6 +351,31 @@ select {
 .validation-error>input {
   border-style: solid;
   border-color: #DC3545;
+}
+
+.center-table>table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.center-table td, th {
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.center-table td:first-child {
+  font-weight: bolder;
+  padding-right: 20px;
+}
+
+.center-table tr:first-child {
+  font-weight: bolder;
+}
+
+.center-table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 footer {
