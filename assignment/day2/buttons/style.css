@@ -74,7 +74,7 @@ input[class="search-button"] {
 	border: none;
 	font-weight: 700;
 	color: white;
-	width: 70px;
+	width: 80px;
 	height: 31px;
 	border-radius: 4px;
 }
@@ -95,4 +95,26 @@ input[class="search-button"] {
 
 td {
 	padding: 15px
+}
+
+.secondary {
+	background-color: #6C747C;
+}
+
+.secondary-dark {
+	background-color: #54595E;
+}
+
+.secondary-light {
+	background-color: #ABB5BE;
+}
+
+.secondary-o {
+	border-color: #6C747C;
+	color: #6C747C;
+	border: 1px solid #6C747C;
+}
+
+footer{
+	height: 200px;
 }
