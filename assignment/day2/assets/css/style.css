@@ -240,6 +240,7 @@ input[class="search-button"] {
   padding: 15px;
 }
 
+
 .nav-list>li:hover {
   background-color: #7749F8;
 }
@@ -319,6 +320,7 @@ select {
   padding: 20px;
   margin-top: -20px;
 }
+
 
 .clear {
   clear: left
@@ -410,6 +412,44 @@ select {
 .center-cards {
   margin-top: 80px;
 }
+
+.basic-left {
+  float: left;
+  width: 32%;
+}
+
+.custom-right {
+  float: right;
+  width: 32%;
+}
+
+.custom-box .heading {
+  float: left;
+  font-weight: 900;
+  margin: 0;
+}
+
+.date {
+  float: right;
+  font-size: 15px;
+  margin-top: 10px
+}
+
+.custom-box {
+  width: 100%;
+  border-style: solid;
+}
+
+.primary-box {
+  background-color: #7749F8;
+  color: white
+}
+
+.custom-list {
+  list-style: none;
+  margin-left: -40px;
+}
+
 
 footer {
   float: left;
