@@ -90,7 +90,7 @@ input[class="search-button"] {
 	font-weight: lighter;
 }
 
-.font12{
+.font12 {
 	font-size: 12px;
 }
 
@@ -134,7 +134,7 @@ input[class="search-button"] {
 }
 
 
-.secondary-primary {
+.secondary {
 	background-color: #6C747C;
 }
 
@@ -176,6 +176,48 @@ input[class="search-button"] {
 
 .gray900 {
 	background-color: #212529;
+}
+
+.container {
+	margin-left: 150px;
+	margin-top: 30px
+}
+
+.heading-text {
+	font-size: 40px;
+}
+
+.btn-table {
+	float: left;
+	width: 100%
+}
+
+
+td {
+	padding: 15px
+}
+
+.table-btn {
+	text-align: center;
+	border: none;
+	font-weight: 700;
+	color: white;
+	width: 80px;
+	height: 31px;
+	border-radius: 4px;
+}
+
+
+.primary-o {
+	border-color: #7749F8;
+	color: #7749f8;
+	border: 1px solid #7749f8;
+}
+
+.secondary-o {
+	border-color: #6C747C;
+	color: #6C747C;
+	border: 1px solid #6C747C;
 }
 
 footer {
