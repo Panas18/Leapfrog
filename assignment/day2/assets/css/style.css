@@ -356,6 +356,7 @@ select {
 .center-table>table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 60px;
 }
 
 .center-table td, th {
@@ -364,7 +365,9 @@ select {
   padding-bottom: 10px;
 }
 
-
+.center-table tr:first-child{
+  border-top: 1px solid #ddd;
+}
 .center-table td:first-child {
   font-weight: bolder;
   padding-right: 20px;
