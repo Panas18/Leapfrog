@@ -251,7 +251,6 @@ input[class="search-button"] {
   float: left;
   width: auto;
   margin-top: -8px;
-  outline: 1px solid red;
 }
 
 input[placeholder="Placeholder"] {
@@ -317,6 +316,10 @@ select {
   display: inline-block;
   padding: 20px;
   margin-top: -20px;
+}
+
+.clear{
+  clear:left
 }
 
 footer {
