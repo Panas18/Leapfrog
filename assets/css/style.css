@@ -1,0 +1,12 @@
+.heading {
+	text-align: center;
+}
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 15px;
+}
