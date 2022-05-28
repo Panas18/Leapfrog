@@ -49,13 +49,63 @@ input[class="search-button"] {
 .heading {
 	margin-left: 150px;
 	margin-top: 30px;
+	position: relative;
 }
 
 .body-text {
 	float: left;
 	width: 50%;
+	position: relative;
 }
 
 .inline-text {
+	float: right;
+	width: 50%;
+}
+
+.lead-text {
 	float: left;
+}
+
+.font-24 {
+	font-size: 24px;
+}
+
+.tabs {
+	float: left;
+	width: 100%
+}
+
+.light {
+	font-weight: lighter;
+}
+
+.tabs-table {
+	border-radius: 8px;
+	border-collapse: collapse;
+}
+
+.tab-table {
+	width: 100px;
+	height: 30px;
+}
+
+.float-left {
+	float: left;
+	width: 50%;
+}
+
+.primary {
+	color: #7749F8;
+}
+
+.font-20 {
+	font-size: 20px;
+}
+
+footer {
+	height: 200px;
+	float: left;
+	position: relative;
+	width: 100%;
 }
