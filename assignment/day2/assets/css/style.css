@@ -437,7 +437,7 @@ select {
 
 .custom-box {
   width: 100%;
-  border-style: solid;
+  border: 1px solid #DFE3E6;
 }
 
 .primary-box {
