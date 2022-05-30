@@ -133,19 +133,67 @@ a[class="home"] {
   background-color: #f8f8f8;
 }
 
-.blog-text{
-  margin-top:72px;
+.blog-text {
+  margin-top: 72px;
   text-align: center;
 }
 
-.blog-heading{
+.blog-heading {
   font-size: 32px;
   font-weight: 600;
 }
 
-.blog-subheading{
+.blog-subheading {
   margin-top: 8px;
   font-size: 16px;
-  color:#797979;
+  color: #797979;
   font-weight: 400;
+}
+
+.card {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 40px;
+  height: auto;
+}
+
+.card ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.card-img {
+  width: 360.67px;
+  height: 281px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 500px;
+  color: #797979;
+  margin-top: 12px
+}
+
+.card-heading {
+  margin-top: 12px;
+  color: #3B3950;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text {
+  margin-top: 8px;
+  color: #797979;
+  font-size: 16px;
+  font-weight: 600;
+  width: 360.67px;
+}
+
+.card>ul>li {
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.float-left{
+  float: left;
 }
