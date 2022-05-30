@@ -1,104 +1,108 @@
 body {
-	font-family: 'Poppins';
-	margin: 0;
+  font-family: 'Poppins';
+  margin: 0;
 }
 
 a {
-	color: #797979;
+  color: #797979;
 }
 
 nav {
-	width: 100%;
-	position: absolute;
-	left: 0px;
-	top: 0px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .logo {
-	padding-top: 32px;
-	padding-left: 40px;
-	padding-bottom: 37px;
-	font-size: 30px;
-	font-weight: 600;
-	float: left;
+  padding-top: 32px;
+  padding-left: 40px;
+  padding-bottom: 37px;
+  font-size: 30px;
+  font-weight: 600;
+  float: left;
 }
 
 .nav-list {
-	float: right;
-	color: #797979;
-	font-size: 16px;
+  float: right;
+  color: #797979;
+  font-size: 16px;
 }
 
 .nav-list>ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list>ul>li {
-	list-style: none;
-	display: inline-block;
-	margin-right: 48px;
-	margin-top: 32px;
-	margin-bottom: 32px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 48px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .nav-list>ul>li>a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-	padding: 16px 30px 16px 30px;
-	border: none;
-	font-size: 16px;
-	border-radius: 4px;
+  padding: 16px 30px 16px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
 .btn.primary {
-	background-color: #4E42D9;
-	color: white;
+  background-color: #4E42D9;
+  color: white;
 }
 
 .clear {
-	clear: right;
+  clear: right;
 }
 
 a[class="home"] {
-	color: #4E42D9;
+  color: #4E42D9;
 }
 
 .hero {
-	position: absolute;
-	top: 126px;
-	right: 120px;
-	left: 120px;
-	outline: 1px solid green;
+  position: absolute;
+  top: 126px;
+  right: 120px;
+  left: 120px;
+  outline: 1px solid green;
 }
 
 .main-text {
-	font-size: 36px;
-	margin-top: 58.5px;
-	float: left;
-	width: 50%
+  font-size: 36px;
+  margin-top: 58.5px;
+  float: left;
+  width: 50%
 }
 
 .small-text {
-	margin-top: 12px;
-	font-size: 16px;
-	font-weight: 400;
-	color: #797979;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #797979;
 }
 
 .main-btn>ul {
-	list-style: none;
-	margin-left: -40px;
-	margin-top: 48px;
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 48px;
 }
 
 .main-btn>ul>li {
-	display: inline-block;
+  display: inline-block;
 }
 
 .btn.secondary {
-	background-color: rgba(78, 66, 217, 0.18);
-	color:#4E42D9
+  background-color: rgba(78, 66, 217, 0.18);
+  color: #4E42D9
+}
+
+.hero-right {
+  float: right
 }
