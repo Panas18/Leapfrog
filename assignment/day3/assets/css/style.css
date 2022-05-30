@@ -46,12 +46,15 @@ nav {
 	text-decoration: none;
 }
 
-.nav-btn {
+.btn {
 	padding: 16px 30px 16px 30px;
 	border: none;
-	background-color: #4E42D9;
-	border-radius: 4px;
 	font-size: 16px;
+	border-radius: 4px;
+}
+
+.btn.primary {
+	background-color: #4E42D9;
 	color: white;
 }
 
@@ -83,4 +86,19 @@ a[class="home"] {
 	font-size: 16px;
 	font-weight: 400;
 	color: #797979;
+}
+
+.main-btn>ul {
+	list-style: none;
+	margin-left: -40px;
+	margin-top: 48px;
+}
+
+.main-btn>ul>li {
+	display: inline-block;
+}
+
+.btn.secondary {
+	background-color: rgba(78, 66, 217, 0.18);
+	color:#4E42D9
 }
