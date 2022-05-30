@@ -197,3 +197,10 @@ a[class="home"] {
 .float-left{
   float: left;
 }
+
+.view-btn{
+  position:absolute;
+  top:1930px;
+  margin-top: 71px;
+  left: 657px;
+}
