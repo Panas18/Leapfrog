@@ -310,6 +310,19 @@ footer {
 
 @media screen and (max-width:576px) {
 
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list>ul>li {
+    display: block;
+    font-size: 16px;
+  }
+
+  #check:checked~.nav-list>ul {
+    left: 0;
+  }
+
   .center-list {
     display: none;
   }
@@ -324,9 +337,6 @@ footer {
 
 
 
-  .nav-list {
-    display: none;
-  }
 
   .hero {
     display: none;
