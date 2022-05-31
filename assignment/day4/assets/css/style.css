@@ -291,8 +291,6 @@ a[class="home"] {
 } */
 
 footer {
-  position: absolute;
-  top: 2450px;
   background-color: #23222F;
   width: 100%;
   height: 56px;
@@ -300,7 +298,6 @@ footer {
 
 .footer-text {
   text-align: center;
-  margin-top: 19px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
   font-size: 14px;
@@ -326,9 +323,6 @@ footer {
   }
 
 
-  footer {
-    display: none;
-  }
 
   .nav-list {
     display: none;
@@ -407,6 +401,8 @@ footer {
   .middle {
     margin-top: 50px;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .middle-heading {
@@ -496,10 +492,12 @@ footer {
 
   .footer {
     width: 100%;
+    height: auto;
     background-color: #292838;
     padding-top: 50px;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+    padding-bottom: 50px;
   }
 
   .title {
@@ -513,7 +511,52 @@ footer {
     width: 100%;
     font-weight: 400;
     line-height: 24px;
-    color:rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 12px;
+  }
+
+  .footer-list {
+    color: white
+  }
+
+  .footer-list>ul>li:first-child {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1)
+  }
+
+  .footer-list>ul>li {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8)
+  }
+
+
+  .footer-list.first {
+    width: 50%;
+    float: left
+  }
+
+
+
+  .footer-list.third {
+    clear: both;
+    margin-top: 48px
+  }
+
+  .list-first {
+    width: 100%;
+    height: auto;
+    margin-top: 48px;
+  }
+
+  .clear {
+    clear: both
+  }
+
+  footer {
+    padding-top: 18px;
   }
 }
