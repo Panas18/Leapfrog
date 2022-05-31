@@ -1,12 +1,42 @@
+body {
+	font-family: "Poppins";
+}
+
 .heading {
 	text-align: center;
+	font-size: 12px;
+	margin-bottom: 24px;
+}
+
+.heading>h1 {
+	margin: 4px;
 }
 
 table {
 	margin: auto;
 	border-collapse: collapse;
+	width: 100%
 }
 
 td {
-	padding: 15px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+tr {
+	height: 56px;
+	font-size: 18px;
+}
+
+th {
+	background-color: #7749F8;
+	color: white;
+}
+
+.btn {
+	height: 56px;
+	width: 100%;
+	padding: 0;
+	margin: 0
 }
