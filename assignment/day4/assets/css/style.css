@@ -323,6 +323,39 @@ footer {
 
 
 @media screen and (max-width:576px) {
+
+  .center-list {
+    display: none;
+  }
+
+  .middle-txt {
+    display: none;
+  }
+
+  .main-btn {
+    margin-top: 48px;
+  }
+
+  .blog {
+    display: none;
+  }
+
+  .buttom {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .hero {
+    display: none;
+  }
+
   nav {
     width: 100%;
     height: 76px;
@@ -351,19 +384,10 @@ footer {
     background-color: white;
   }
 
-
-
   img.ham-img {
     width: 100%
   }
 
-  .nav-list {
-    display: none;
-  }
-
-  .hero {
-    display: none;
-  }
 
   .hero-middle {
     display: unset;
@@ -398,19 +422,39 @@ footer {
 
   }
 
-  .center-list {
-    display: none;
+  .middle {
+    margin-top: 50px;
+    text-align: center;
+    outline: 1px solid green;
   }
 
-  .middle-txt {
-    display: none;
+  .middle-heading {
+    color: #3B3950;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 72px;
   }
 
-  .main-btn {
-    margin-top: 48px;
+  .svg{
+    margin: 0;
+    margin-bottom: 20px;
   }
 
-  .blog {
-    display: none;
+  .svg-image {
+    margin-bottom: 24px;
   }
+
+  .card-head {
+    font-size: 25px;
+    font-weight: 500;
+    color: #3B3950
+  }
+
+  .card-txt {
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+    height: 56px;
+  }
+
 }
