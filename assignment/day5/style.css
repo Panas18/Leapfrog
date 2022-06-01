@@ -112,6 +112,19 @@ nav {
   border-radius: 4px;
 }
 
+.color-type{
+  margin-top: 13px;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.color-value{
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .primary {
   background-color: #7749F8;
 }
