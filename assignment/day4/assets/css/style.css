@@ -444,13 +444,13 @@ footer {
 
   .middle {
     width: 100%;
-    margin-top: 50px;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin:0;
-    margin-top:100px
-
+    margin: 0;
+    height: 100%;
+    margin-top: 100px;
+    overflow: auto;
   }
 
   .middle-heading {
@@ -495,15 +495,22 @@ footer {
   }
 
   .blog {
-    position: unset;
-    top: unset;
-    bottom: unset;
+    /* position: relative; */
+    display: block;
+    overflow: auto;
+    margin-top: 50px;
   }
 
   .blog-text {
-    margin-top: 50px;
+    margin-top: unset;
+    height: auto;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .blog-heading {
+    height: auto;
+    margin-top: 50px;
   }
 
   .card {
@@ -594,7 +601,6 @@ footer {
     width: 50%;
     float: left
   }
-
 
 
   .footer-list.third {
