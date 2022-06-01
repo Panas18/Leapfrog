@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Ppppins";
+  /* border:1px solid blue; */
+
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+*::after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+
+nav {
+  background-color: #F9F9FB;
+  padding: 20px 100px 20px 100px;
+}
+
+.logo {
+  float: left;
+  font-size: 26;
+  font-weight: bolder;
+  margin-top: 8px;
+}
+
+.nav-list {
+  float: left;
+  margin-left: 40px;
+}
+
+.nav-search {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.nav-list>ul>li {
+  margin: 8px 10px 15px 10px
+}
+
+.nav-list>ul>li>a {
+  color: #6C747C;
+  font-size: 16px;
+}
+
+.search-text {
+  height: 37px;
+  width: 170px;
+  border-style: solid;
+  border-color: #AEB8C0;
+  border-radius: 4px;
+  padding: 0px 20px
+}
+
+.search-btn {
+  height: 37px;
+  width: 65px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #28A745;
+}
+
+.search-btn>a {
+  color: #28A745;
+  background-color: #F9F9FB;
+}
+
+.container {
+  margin: 32px 100px 0px 100px
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 32px;
+}
+
+
+.color-card {
+  margin-top: 54px;
+  outline: 1px solid red;
+}
+
+.secondary-title {
+  font-size: 32px;
+  font-weight: 600;
+}
