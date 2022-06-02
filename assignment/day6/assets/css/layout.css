@@ -142,7 +142,7 @@ select {
     height: auto;
     padding: 0;
     background-color: #f9f1e7;
-    padding: 20px 40px 10px  40px;
+    padding: 20px 40px 10px 40px;
   }
 
   nav::before {
@@ -155,12 +155,17 @@ select {
     float: none;
     font-size: 24px;
     font-weight: 600;
-    float: left
+    float: left;
+    padding:0;
   }
 
 
   .navbar__hammenu {
     display: unset;
     float: right
+  }
+
+  .navbar__hammenu button{
+    border: none;
   }
 }
