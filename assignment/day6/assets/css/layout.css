@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+
+
+
+*::after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+li {
+	display: inline-block;
+	list-style: none;
+}
+
+
+
+.container {
+	max-width: 1440px;
+	text-align: center;
+	margin: auto
+}
+
+nav {
+	height: 221px;
+	position: relative;
+	z-index: 9;
+	padding: 40px 100px 32px 100px;
+	background-color: #F9F1E7;
+}
+
+nav::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background-color: #FCF8F3;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 67%;
+}
+
+.navbar__logo {
+	float: left;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 8px 41px 8px 8px
+}
+
+.navbar__nav-list {
+	float: left;
+}
+
+
+.navbar__search {
+	width: 130%;
+	height: 45px;
+}
+
+.navbar__nav-list a {
+	color: #3A3A3A;
+	font-size: 16px;
+	font-weight: 400px;
+}
+
+.navbar__nav-list li:not(:last-child) {
+	padding-right: 40px;
+}
+
+.navbar__icons {
+	float: right
+}
+
+.navbar__icons li:not(:last-child) {
+	padding-right: 32px;
+}
+
+
+select {
+	border: none;
+	background-color: unset;
+}
+
+.nav__footer {
+	margin-top: 72px;
+	width:100%;
+}
+
+.nav__indicator {
+	outline: 1px solid red;
+	height: 27px;
+	width: 200px;
+	float: left;
+}
+
+.nav__indicator li:not(:last-child) {
+	padding-right: 20px;
+}
+
+.nav__ellipse {
+	padding-bottom: 8px;
+}
+
+.nav__arrow {
+	float: right
+}
+
+.nav__arrow li:first-child {
+	padding-right: 8px;
+}
+
+@media all screen  and max{
+	
+}
