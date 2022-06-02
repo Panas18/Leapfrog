@@ -1,6 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+}
 body {
   font-family: 'Poppins';
-  margin: 0;
 }
 
 a {
@@ -306,6 +309,31 @@ footer {
   font-size: 14px;
 }
 
-.primary{
-  color:rgba(78, 66, 217, 1)
+.primary {
+  color: rgba(78, 66, 217, 1)
+}
+
+
+@media screen and (max-width:380px) {
+
+  nav {
+    width: 100%;
+  }
+
+  .logo {
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+
+  .nav-list {
+    width: 100%;
+    font-size: 16px;
+    float: none
+  }
+
+  nav-list>ul>li {
+    margin: 0;
+  }
+
 }
