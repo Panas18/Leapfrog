@@ -1,6 +1,5 @@
 /* ----------------nav bar-------- */
 
-
 .navbar__hammenu {
   display: none;
 }
@@ -12,8 +11,6 @@
   box-sizing: border-box;
   font-family: 'Roboto';
 }
-
-
 
 *::after {
   content: "";
@@ -99,7 +96,6 @@ select {
 }
 
 .nav__indicator {
-  outline: 1px solid red;
   height: 27px;
   width: 200px;
   float: left;
@@ -305,12 +301,98 @@ select {
 }
 
 
+/* --------------------explore-------------------- */
+.explore {
+  margin-top: 44px;
+  background-color: #FCF8F3;
+  padding: 44px 0 44px 100px;
+  height: 670px;
+}
+
+.explore__more {
+  float: left;
+  max-width: 378px;
+  width: 100%;
+  margin-top: 179px;
+  /* margin-right: 86px; */
+}
+
+.more__heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.more__text {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+}
+
+.more__btn {
+  margin-top: 24px;
+  max-width: 178px;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  background-color: #E89F71;
+}
+
+.more__btn>a {
+  color: white;
+  line-height: 48px;
+}
+
+
+.explore__middle {
+  float: left;
+  max-width: 404px;
+  width: 100%;
+  height: auto;
+  margin-right: 24px;
+}
+
+.explore_middle img {
+  width: 100%;
+  height: auto;
+}
+
+.explore__right {
+  float: left;
+  max-width: 372px;
+  width: 100%;
+  position: relative;
+}
+
+.image__full {
+  float: left;
+}
+
+.image__overflow {
+  max-width: 372px;
+  height: 468px;
+  width: 100%;
+  float: right;
+  position: absolute;
+  left: 1200px;
+}
+
+.image__overflow>img{
+  width:100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+
+
+
 @media screen and (max-width:576px) {
 
   .navbar__nav-list {
     display: none;
   }
-
 
   .navbar__icons {
     display: none;
@@ -322,6 +404,8 @@ select {
 
   .container {
     width: 100%;
+    height: auto;
+    position:relative;
   }
 
   nav {
