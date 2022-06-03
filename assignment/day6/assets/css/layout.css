@@ -4,6 +4,14 @@
   display: none;
 }
 
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right:
+}
 * {
   margin: 0;
   padding: 0;
@@ -377,13 +385,95 @@ select {
   left: 1200px;
 }
 
-.image__overflow>img{
-  width:100%;
+.image__overflow>img {
+  width: 100%;
   height: auto;
   overflow: hidden;
 }
 
+/* --------------------tips-------------------- */
 
+.tips {
+  width: 100%;
+}
+
+.tips__heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.tips__list {
+  margin-top: 32px;
+  padding: 44px 0px 0px 100px;
+  width: 100%
+}
+
+.tips__card {
+  float: left;
+  max-width: 391px;
+  width: calc(100%/3);
+  height: auto;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.tips__img {
+  width: 100%
+}
+
+.tip__img>img {
+  width: 100%;
+}
+
+.tips__desc {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 274px
+}
+
+
+.tips__date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #898989;
+  margin-top: 8px
+}
+
+.share {
+  margin-top: 52px
+}
+
+.share__heading {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.share__title {
+  font-size: 20px;
+  font-weight: 600px;
+  color:#616161
+}
+
+.share__heading{
+  font-size:40px;
+  font-weight: 700;
+}
+
+.share__content{
+  margin-top:8px;
+  width:100%;
+  height: auto;
+}
+
+.share__content div{
+  padding:8px
+}
+
+.share__block1{
+  width:54%
+}
 
 
 
@@ -405,7 +495,7 @@ select {
   .container {
     width: 100%;
     height: auto;
-    position:relative;
+    position: relative;
   }
 
   nav {
