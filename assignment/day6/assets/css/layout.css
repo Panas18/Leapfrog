@@ -395,6 +395,7 @@ select {
 /* --------------------tips-------------------- */
 
 .tips {
+  margin-top: 44px;
   width: 100%;
 }
 
@@ -555,9 +556,64 @@ select {
   width: 60%
 }
 
-.share__img9>img{
+.share__img9>img {
   width: 100%
 }
+
+/* --------------------footer-------------------- */
+
+.horizontal_line {
+  margin-top: 87px;
+  padding: 0 100px
+}
+
+hr {
+  border: 1px solid #D8D8D8;
+}
+
+.footer {
+  margin-top: 31px;
+  padding: 50px 100px;
+}
+
+.footer ul li {
+  display: inline
+}
+
+.footer__send {
+  max-width: 46px;
+  width: 100%;
+  height: 46px;
+  background-color: #E89F71;
+  text-align: center;
+  padding-top: 12px;
+  /* margin-left: 4px; */
+}
+
+.footer__input input{
+  height: 46px;
+}
+
+.footer__col {
+  float: left;
+  width: 20%;
+}
+
+.footer__col>ul>li>a {
+  color: #616161;
+}
+.footer__col>ul>li{
+  margin-top: 16px;
+
+}
+
+
+h4{
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 
 @media screen and (max-width:576px) {
 
