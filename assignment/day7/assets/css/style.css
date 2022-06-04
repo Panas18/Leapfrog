@@ -80,22 +80,47 @@
 
   .nav__list {
     display: flex;
+    align-items: center;
+  }
+
+  .nav__list a {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #252641
   }
 
   .nav__center {
     display: flex;
   }
 
-  .nav__center>a {
-    margin-right: 50px;
+  .nav__center a {
+    margin-right: 30px;
   }
 
   .nav__right {
     display: flex;
   }
 
+  .nav__login{
+    background-color: white;
+    max-width: 160px;
+    width: 100%;
+    padding: 14px 50px;
+    border-radius: 80px;
+  }
+
+  .nav__signup{
+    background-color: #F48C06;
+    max-width: 160px;
+    width: 100%;
+    padding:13px 36px;
+    border-radius: 80px;
+  }
+
   .nav__right div {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
 }
