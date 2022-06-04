@@ -510,7 +510,7 @@ select {
 }
 
 .share__block2 {
-  margin-top: 100px
+  margin-top: 200px
 }
 
 .share__block2 {
@@ -526,15 +526,38 @@ select {
 }
 
 .share__img6 {
+  margin-top: 100px;
   width: 70%
 }
 
-.share__img6 {
+.share__img6>img {
+  width: 100%
+}
+
+.share__img7 {
+  width: 30%
+}
+
+.share__img7>img {
+  width: 100%
+}
+
+.share__img8 {
+  width: 40%
+}
+
+.share__img8>img {
   width: 100%
 }
 
 
+.share__img9 {
+  width: 60%
+}
 
+.share__img9>img{
+  width: 100%
+}
 
 @media screen and (max-width:576px) {
 
