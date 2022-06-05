@@ -369,7 +369,7 @@
   .skiline-img__list {
     margin-top: 80px;
     display: flex;
-    justify-content:space-evenly
+    justify-content: space-evenly
   }
 
   .skiline-img {
@@ -424,9 +424,73 @@
 
 
 
-/* --------------------learn more-------------------- */
-  .more{
-    margin-top:180px
+  /* --------------------learn more-------------------- */
+  .more {
+    margin-top: 180px;
+    display: flex;
+  }
+
+  .more__left {
+    flex: 1.5;
+  }
+
+  .more__heading {
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 655px;
+    width: 100%
+  }
+
+  .more__desc {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #696984;
+    margin-bottom: 30px;
+    max-width: 730px;
+    width: 100%
+  }
+
+  a.more__learn {
+    font-size: 22px;
+    text-decoration: underline;
+    font-weight: 400;
+    color: #696984
+  }
+
+  .more__right {
+    position: relative;
+    max-width: 705px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .more__right img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+  .more__blue {
+    position: absolute;
+    width: 138px;
+    height: auto;
+    top: 0;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+
+  }
+
+  .more__orange {
+    position:absolute;
+    width: 138px;
+    height: auto;
+    bottom:0;
+    right:0;
+    right:-20px;
+    bottom:-20px;
+    z-index:-1;
   }
 
 }
