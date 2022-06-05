@@ -586,37 +586,118 @@
   .integration__left {
     display: flex;
     justify-content: space-between;
-    width:60%;
+    width: 60%;
     flex-wrap: wrap;
   }
 
-  .integration__right{
-    margin-left:100px;
-  }
-  .integration__img img{
-    margin:20px
+  .integration__right {
+    margin-left: 100px;
   }
 
-  .right__title{
+  .integration__img img {
+    margin: 20px
+  }
+
+  .right__title {
     font-size: 20px;
     font-weight: 400;
-    color:#525596;
+    color: #525596;
     margin-bottom: 33px;
   }
 
-  .int__right__heading{
+  .int__right__heading {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom:30px
+    margin-bottom: 30px
   }
 
-  .int__content{
+  .int__content {
     max-width: 687px;
     text-align: left;
     font-size: 24px;
     font-weight: 400;
-    color:#696984
+    color: #696984
   }
+
+
+  /* --------------------Testimonial-------------------- */
+
+  .testimonial {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .testimonial__right {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .testimonial__img {
+    z-index: 1;
+  }
+
+  .testimonial__img img {
+    border-radius: 40px;
+  }
+
+  .testimonial__heading {
+    font-size: 60px;
+    font-weight: 600;
+    color: #2F327D;
+    margin-bottom: 20px;
+  }
+
+  .testimonial__content {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .testimonial__content p {
+    margin-bottom: 26px;
+  }
+
+  .testimonial__card {
+    position: absolute;
+    /* max-width: 500px; */
+    width: 500px;
+    height: auto;
+    padding: 41px 59px;
+    border: 2px solid #F67766;
+    border-radius: 20px;
+    top: 60%;
+    left: 30%;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .testimonial__card:hover {
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  }
+
+  .testi-card__top {
+    font-size: 22px;
+    color: #5F5F7E;
+    margin-bottom: 43px;
+  }
+
+  .testi-card__name {
+    font-size: 24px;
+    color: #5F5F7E;
+    float: left
+  }
+
+  .testi-card__review {
+    float: right;
+  }
+
+  .testi-card__review p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #80819A
+  }
+
+
 
 
 }
