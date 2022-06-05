@@ -100,8 +100,12 @@
     display: unset;
   }
 
+  .pad__section {
+    padding: 0px 100px;
+  }
+
   .nav {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -158,8 +162,8 @@
 
   .header__hero {
     display: flex;
-    padding:0 100px;
-    justify-content:space-between ;
+    padding: 0 100px;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -180,15 +184,16 @@
     font-weight: 400;
   }
 
-  .span__left {
+  .left {
     padding-right: 20px;
+    float: left;
   }
 
   .hero__btn {
     margin-top: 56px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .hero__join {
@@ -230,14 +235,102 @@
     font-weight: 400;
   }
 
-  .hero__right{
+  .hero__right {
     margin-left: auto;
   }
 
-  .hero__right img{
+  .hero__right img {
     width: 500px;
     height: auto;
   }
 
-}
 
+  /* --------------------trust-------------------- */
+  .trust {
+    margin-top: 100px;
+    padding: 0px 100px;
+  }
+
+  .trust__heading {
+    font-size: 28px;
+    font-weight: 500;
+    color: #696984;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .trust__list {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* --------------------cloud-------------------- */
+
+  .cloud {
+    margin-top: 160px;
+  }
+
+  .cloud__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cloud__heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .cloud__text {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #696984;
+  }
+
+  .cloud__card__list {
+    margin-top: 160px;
+  }
+
+  .cloud__card {
+    position: relative;
+    max-width: 350px;
+    height: auto;
+    padding: 122px 40px 50px 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(38, 45, 118, 0.08);
+    ;
+  }
+
+  .card__heading {
+    font-size: 30px;
+    font-weight: 500;
+    color: #2F327D;
+    margin-bottom: 24px;
+  }
+
+  .card__desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: #696984;
+  }
+
+  .cloud__logo {
+    position: absolute;
+    top: -80px;
+    left: 100px;
+    z-index: 2;
+  }
+  .cloud__card__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
