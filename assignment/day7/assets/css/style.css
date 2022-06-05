@@ -633,6 +633,34 @@
     padding-left: 40px;
   }
 
+  .testi__btn {
+    max-width: 403px;
+    text-align: center;
+    width: auto;
+    padding-right: 40px;
+    height: 80px;
+    border: 1px solid #F48C06;
+    line-height: 80px;
+    border-radius: 20px;
+    background-image: url(../images/svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .testi__btn a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #F48C06
+  }
+
+  .testi__btn:hover {
+    background-color: #F48C06;
+  }
+
+  .testi__btn:hover a {
+    color: white
+  }
+
   .testimonial__img {
     z-index: 1;
   }
@@ -698,6 +726,101 @@
   }
 
 
+
+  /* ---------------------news------------------- */
+  .news {
+    margin-top: 270px;
+  }
+
+  .news__heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2F327D;
+    text-align: center;
+  }
+
+  .news__subtitle {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #696984;
+    text-align: center
+  }
+  .news__left{
+    flex:1
+  }
+
+  .news__left__card {
+    width: 500px
+  }
+
+  .news__left__card:hover {
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  }
+
+  .news__left__img img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .news__left__heading {
+    margin-top: 22px;
+    font-size: 26px;
+    font-weight: 500px;
+    color: #252641;
+  }
+
+  .news__left__desc {
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #696984;
+  }
+
+  .read__more {
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 28px;
+  }
+
+  .read__more a {
+    color: #696984
+  }
+  .news__wrapper{
+    display:flex;
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+  .news__right__list{
+    flex:3;
+    margin-left: 20px;
+  }
+
+  .news__right__list>div{
+    padding-bottom: 40px;
+  }
+  .news__right__img{
+    float:left;
+  }
+  .news__right__content{
+    float:left;
+    max-width: 400px;
+    margin-left: 20px;
+  }
+  .news__right__heading{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .news__right__subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    color:#696984
+  }
+
+
+  /* ---------------------footer------------------- */
 
 
 }
