@@ -305,9 +305,14 @@
     text-align: center;
     z-index: 1;
     border-radius: 20px;
-    box-shadow: 0px 10px 20px rgba(38, 45, 118, 0.08);
-    ;
+    /* box-shadow: 0px 10px 20px rgba(38, 45, 118, 0.08); */
   }
+
+  .cloud__card:hover {
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+
+  }
+
 
   .card__heading {
     font-size: 30px;
@@ -325,12 +330,103 @@
   .cloud__logo {
     position: absolute;
     top: -80px;
-    left: 100px;
+    left: 0;
+    right: 0;
     z-index: 2;
   }
-  .cloud__card__list{
+
+  .cloud__card__list {
     display: flex;
     justify-content: space-between;
+  }
+
+
+
+  /* --------------------Skiline-------------------- */
+
+  .skiline {
+    margin-top: 158px;
+  }
+
+  .skiline__heading {
+    font-size: 44px;
+    font-weight: 600;
+    max-width: 371px;
+    margin: 0 auto;
+  }
+
+  .skiline__desc {
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 1101px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .skiline-img__list {
+    margin-top: 80px;
+    display: flex;
+    justify-content:space-evenly
+  }
+
+  .skiline-img {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+  }
+
+
+  .skiline-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .skiline-img__heading {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: white
+  }
+
+  .skiline-img__btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 283px;
+    width: 100%;
+    top: 50%;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .skiline-img:hover .skiline-img__btn {
+    background-color: rgba(35, 189, 238, 0.9);
+  }
+
+  .skiline-img__btn a {
+    color: white;
+  }
+
+
+
+/* --------------------learn more-------------------- */
+  .more{
+    margin-top:180px
   }
 
 }
