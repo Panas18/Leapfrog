@@ -1,4 +1,5 @@
 * {
+
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -119,6 +120,7 @@
     margin-right: auto;
   }
 
+
   .nav__list {
     display: flex;
     align-items: center;
@@ -143,6 +145,11 @@
   .nav__right {
     display: flex;
   }
+
+  .nav__right div:hover {
+    background-color: #F48C06
+  }
+
 
   .nav__login {
     max-width: 160px;
@@ -746,8 +753,9 @@
     color: #696984;
     text-align: center
   }
-  .news__left{
-    flex:1
+
+  .news__left {
+    flex: 1
   }
 
   .news__left__card {
@@ -787,40 +795,142 @@
   .read__more a {
     color: #696984
   }
-  .news__wrapper{
-    display:flex;
+
+  .news__wrapper {
+    display: flex;
     margin-top: 100px;
     justify-content: space-between;
   }
-  .news__right__list{
-    flex:3;
+
+  .news__right__list {
+    flex: 3;
     margin-left: 20px;
   }
 
-  .news__right__list>div{
+  .news__right__list>div {
     padding-bottom: 40px;
   }
-  .news__right__img{
-    float:left;
+
+  .news__right__img {
+    float: left;
   }
-  .news__right__content{
-    float:left;
+
+  .news__right__content {
+    float: left;
     max-width: 400px;
     margin-left: 20px;
   }
-  .news__right__heading{
+
+  .news__right__heading {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  .news__right__subtitle{
+
+  .news__right__subtitle {
     font-size: 20px;
     font-weight: 400;
-    color:#696984
+    color: #696984
   }
 
 
   /* ---------------------footer------------------- */
 
+  .footer {
+    background-color: #252641;
+    height: 500px;
+    padding-top: 70px;
+  }
+
+  .footer_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__text {
+    font-size: 32px;
+    font-weight: 700;
+    color: white
+  }
+
+  .footer__logo{
+    position: relative;
+    display: unset;
+    margin: 0;
+    margin-right: 20px;
+    border-right: 2px solid #626381;
+    padding-right: 40px;
+    align-items: center;
+  }
+
+  .row1__right {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+
+  .subscribe {
+    margin-top: 90px;
+    color: white
+  }
+
+  .email {
+    margin-top: 20px;
+    padding-right: 20px;
+  }
+
+  .email input {
+    border-radius: 20px;
+    height: 60px;
+    width: 400px;
+    background-color: rgba(35, 189, 238, 0);
+    border: 1px solid #83839A;
+    padding-left: 20px;
+  }
+
+  .sub_btn {
+    margin-top: 20px;
+    height: 60px;
+    width: 179px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #545AE7;
+    border-radius: 60px;
+  }
+
+  .sub_btn:hover {
+    background-color: #161cca;
+  }
+
+  .sub_btn a {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .row_3 {
+    margin-top: 96px;
+  }
+
+  .row_3 div {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #626381;
+  }
+
+  .row_3 a {
+    font-size: 22px;
+    color: #B2B3CF
+  }
+
+  .row4 {
+    margin-top: 20px;
+    color: #B2B3CF;
+    font-size: 22px;
+    font-weight: 400;
+
+  }
 
 }
