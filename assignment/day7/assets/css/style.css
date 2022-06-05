@@ -579,5 +579,44 @@
 
   .integration {
     margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
   }
+
+  .integration__left {
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+    flex-wrap: wrap;
+  }
+
+  .integration__right{
+    margin-left:100px;
+  }
+  .integration__img img{
+    margin:20px
+  }
+
+  .right__title{
+    font-size: 20px;
+    font-weight: 400;
+    color:#525596;
+    margin-bottom: 33px;
+  }
+
+  .int__right__heading{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom:30px
+  }
+
+  .int__content{
+    max-width: 687px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    color:#696984
+  }
+
+
 }
