@@ -483,14 +483,68 @@
   }
 
   .more__orange {
-    position:absolute;
+    position: absolute;
     width: 138px;
     height: auto;
-    bottom:0;
-    right:0;
-    right:-20px;
-    bottom:-20px;
-    z-index:-1;
+    bottom: 0;
+    right: 0;
+    right: -20px;
+    bottom: -20px;
+    z-index: -1;
+  }
+
+  /* --------------------feature-------------------- */
+
+  .feature {
+    margin-top: 160px;
+  }
+
+  .feature__heading {
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 239px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .feature__desc {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 888px;
+    margin: 0 auto;
+    color: #696984;
+    margin-top:50px;
+  }
+
+  .feature__list {
+    display: flex;
+    margin-top: 176px;
+  }
+
+  .feature__desc__heading {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .feature__img{
+    max-width:50%;
+    width:100%;
+  }
+
+  .feature__img img{
+    width:100%
+  }
+
+  .feature__desc__heading{
+    margin-bottom:51px ;
+
+  }
+  .feature__def p{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 40px;
   }
 
 }
