@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  react-app:
+    build: ./react-app
+
+    volumes:
+      - ./react-app:/react-app/
+
+    ports:
+      - 8000:3000
+
+    depends_on:
+      - node
+
+  node:
+    image: node:latest
