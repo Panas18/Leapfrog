@@ -648,7 +648,7 @@
     height: 80px;
     border: 1px solid #F48C06;
     line-height: 80px;
-    border-radius: 20px;
+    border-radius: 80px;
     background-image: url(../images/svg/arrow.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -704,6 +704,7 @@
     left: 30%;
     z-index: 2;
     background-color: white;
+    border-left-width: 20px;
   }
 
   .testimonial__card:hover {
