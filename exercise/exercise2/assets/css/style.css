@@ -1,0 +1,17 @@
+#scratterPlot{
+	width: 800px;
+	height: 300px;
+	position: relative;
+	margin: auto;
+	border: 1px solid #ccc
+}
+
+#bounce_ball{
+	position: relative;
+	width: 800px;
+	height: 300px;
+	margin:auto;
+	margin-top:100px;
+	margin-bottom: 100px;
+	border: 1px solid #ccc;
+}
