@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#container {
+	width: 1000px;
+	height: 500px;
+	border: 1px solid #ccc;
+	position:relative;
+	margin:50px auto
+}
