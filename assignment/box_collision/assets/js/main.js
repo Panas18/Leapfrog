@@ -2,7 +2,6 @@ const random = Math.random()
 const container = document.getElementById("container")
 const max_height = 500;
 const max_width = 1000;
-const fps = 60
 const colors = ['red', 'blue', 'green', 'pink', 'purple', 'orange', 'yellow', 'magenta', 'black', 'brown', 'cyan']
 
 
@@ -12,22 +11,20 @@ class Ball {
   constructor() {
     this.pos_x = Math.random() * max_width;
     this.pos_y = Math.random() * max_height;
+    this.current_x = this.pos_x;
+    this.current_y = this.pos_y;
     this.diameter = Math.random() * 100;
     this.color = colors[Math.floor(Math.random() * colors.length)]
     if (this.diameter < 30) {
       this.diameter = 30
     }
-    if ((this.pos_x + this.diameter) >= max_width) {
-      this.pos_x -= this.diameter
-    }
-    if ((this.pos_y + this.diameter) >= max_height) {
-      this.pos_y -= this.diameter
-    }
-    this.current_x = this.pos_x;
-    this.current_y = this.pos_y;
+
     this.velocity_x = (Math.random() * 21) - 10
     this.velocity_y = (Math.random() * 21) - 10
+    this.mass = 3 * this.diameter
 
+    this.center_x = this.current_x + this.diameter / 2
+    this.center_y = this.current_y + this.diameter / 2
 
     this.radius = this.diameter / 2
 
@@ -46,6 +43,14 @@ class Ball {
     this.element = document.createElement("div");
     container.appendChild(this.element);
 
+    if ((max_width- this.pos_x) <= this.diameter) {
+      this.pos_x -= 150
+    }
+
+    if ((max_height- this.pos_y) <= this.diameter) {
+      this.pos_y -= 150
+    }
+
     this.element.style.width = `${this.diameter}px`
     this.element.style.height = `${this.diameter}px`
     this.element.style.position = "absolute"
@@ -57,15 +62,13 @@ class Ball {
 
 
   update() {
-    setInterval(() => {
-      this.current_x += this.velocity_x;
-      this.current_y += this.velocity_y;
-      this.element.style.top = `${this.current_y}px`
-      this.element.style.left = `${this.current_x}px`
-      this.center_x = this.current_x + (this.radius)
-      this.center_y = this.current_y + (this.radius)
-      this.detect_boundry()
-    }, 1000 / fps);
+    this.current_x += this.velocity_x;
+    this.current_y += this.velocity_y;
+    this.element.style.top = `${this.current_y}px`
+    this.element.style.left = `${this.current_x}px`
+    this.center_x = this.current_x + this.diameter / 2
+    this.center_y = this.current_y + this.diameter / 2
+    this.detect_boundry()
   }
 }
 
@@ -75,10 +78,77 @@ function generate_ball(num = 2) {
   for (let i = 0; i < num; i++) {
     balls.push(new Ball())
   }
+  for (let i = 0; i < balls.length; i++) {
+    for (let j = i + 1; j < balls.length; j++) {
+      let distance = get_distance(
+        balls[i].center_x,
+        balls[i].center_y,
+        balls[j].center_x,
+        balls[j].center_y,
+      )
+      if (distance <= (balls[i].radius + balls[j].radius)) {
+        console.log("overlap detected")
+        // balls.splice(j, 1)
+        // generate_ball(num - balls.length)
+      }
+    }
+  }
+
   return balls
 }
 
-
 const balls = generate_ball(10)
-balls.forEach(ball=> ball.create());
-balls.forEach(ball => ball.update())
+
+function get_distance(x1, y1, x2, y2) {
+  let distance_x = x1 - x2;
+  let distance_y = y1 - y2;
+  return Math.sqrt(Math.pow(distance_x, 2) + Math.pow(distance_y, 2));
+}
+
+function change_direction_x(ball1, ball2) {
+  v1 = ball1.velocity_x
+  v2 = ball2.velocity_x
+  ball1.velocity_x = (((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2)
+
+  ball2.velocity_x = (((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2)
+}
+function change_direction_y(ball1, ball2) {
+  v1 = ball1.velocity_y
+  v2 = ball2.velocity_y
+  ball1.velocity_y = (((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2)
+
+  ball2.velocity_y = (((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2)
+}
+
+function detect_collision(balls) {
+  for (let i = 0; i < balls.length; i++) {
+    for (let j = i + 1; j < balls.length; j++) {
+      let distance = get_distance(
+        balls[i].center_x,
+        balls[i].center_y,
+        balls[j].center_x,
+        balls[j].center_y,
+      )
+      if (distance <= (balls[i].radius + balls[j].radius)) {
+        change_direction_x(balls[i], balls[j])
+        change_direction_y(balls[i], balls[j])
+      }
+    }
+  }
+}
+
+
+balls.forEach(ball => ball.create());
+
+function play() {
+  balls.forEach(ball => ball.update())
+  detect_collision(balls)
+  window.requestAnimationFrame(() => play())
+}
+
+// play()
+
