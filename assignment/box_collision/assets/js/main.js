@@ -8,8 +8,8 @@ container.style.height = max_height + 'px'
 
 class Ball {
   constructor() {
-    this.pos_x = Math.random() * (max_width - 101) ;
-    this.pos_y = Math.random() * (max_height -101) ;
+    this.pos_x = Math.random() * (max_width - 101);
+    this.pos_y = Math.random() * (max_height - 101);
     this.current_x = this.pos_x;
     this.current_y = this.pos_y;
     this.diameter = Math.random() * 100;
@@ -57,16 +57,6 @@ function generate_ball(num) {
     balls.push(new Ball())
   }
 
-  //regenerate ball when it spawn outside of the container
-  // function detect_outside_spawn() {
-  //   for (let i = 0; i < balls.length; i++) {
-  //     if (((max_width - balls[i].pos_x) <= balls[i].diameter) || ((max_height - balls[i].pos_y) <= balls[i].diameter)) {
-  //       balls.splice(i, 1)
-  //       detect_outside_spawn()
-  //     }
-  //   }
-  // }
-
   //regenerate balls when it overlaps
   function detect_overlap() {
     for (let i = 0; i < balls.length; i++) {
@@ -81,19 +71,21 @@ function generate_ball(num) {
           console.log("overlap on generation")
           balls.splice(j, 1)
           balls.push(new Ball())
-          // detect_outside_spawn()
           detect_overlap()
         }
       }
     }
   }
   detect_overlap()
-
   return balls
 }
 
 
-function get_distance(x1, y1, x2, y2) {
+function get_distance(ball1, ball2) {
+  let x1 = ball1.center_x
+  let y1 = ball1.center_y
+  let x2 = ball2.center_x
+  let y2 = ball2.center_y
   let distance_x = x1 - x2;
   let distance_y = y1 - y2;
   return Math.sqrt(Math.pow(distance_x, 2) + Math.pow(distance_y, 2));
@@ -115,34 +107,58 @@ function detect_boundry(balls) {
 function change_direction_x(ball1, ball2) {
   v1 = ball1.velocity_x
   v2 = ball2.velocity_x
+  pen_dist = penetration_dist(ball1, ball2)
   ball1.velocity_x = ((((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
     (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2))
 
   ball2.velocity_x = ((((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
     (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2))
+
+  if (ball1.velocity_x > 0) {
+    ball1.current_x += pen_dist / 2
+  } else {
+    ball1.current_x -= pen_dist / 2
+  }
+  if (ball2.velocity_x > 0) {
+    ball2.current_x += pen_dist / 2
+  } else {
+    ball2.current_x -= pen_dist / 2
+  }
 }
 
 function change_direction_y(ball1, ball2) {
   v1 = ball1.velocity_y
   v2 = ball2.velocity_y
+
+  pen_dist = penetration_dist(ball1, ball2)
+
   ball1.velocity_y = ((((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
     (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2))
 
   ball2.velocity_y = ((((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
     (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2))
+
+  if (ball1.velocity_y > 0) {
+    ball1.current_y += pen_dist / 2
+  } else {
+    ball1.current_y -= pen_dist / 2
+  }
+  if (ball2.velocity_y > 0) {
+    ball2.current_y += pen_dist / 2
+  } else {
+    ball2.current_y -= pen_dist / 2
+  }
 }
 
+function penetration_dist(ball1, ball2) {
+  return (ball1.radius + ball2.radius - get_distance(ball1, ball2))
 
+}
 
 function detect_collision(balls) {
   for (let i = 0; i < balls.length; i++) {
     for (let j = i + 1; j < balls.length; j++) {
-      let distance = get_distance(
-        balls[i].center_x,
-        balls[i].center_y,
-        balls[j].center_x,
-        balls[j].center_y,
-      )
+      let distance = get_distance(balls[i], balls[j])
       if (distance <= (balls[i].radius + balls[j].radius)) {
         change_direction_x(balls[i], balls[j])
         change_direction_y(balls[i], balls[j])
@@ -152,7 +168,7 @@ function detect_collision(balls) {
 }
 
 
-const balls = generate_ball(20)
+const balls = generate_ball(50)
 balls.forEach(ball => ball.create());
 
 function play() {
@@ -162,5 +178,5 @@ function play() {
   window.requestAnimationFrame(() => play())
 }
 
- play()
+play()
 
