@@ -1,15 +1,15 @@
-const random = Math.random()
 const container = document.getElementById("container")
-const max_height = 500;
-const max_width = 1000;
-
+const max_height = window.innerHeight - 20
+const max_width = window.innerWidth - 20
+container.style.width = max_width + 'px'
+container.style.height = max_height + 'px'
 
 
 
 class Ball {
   constructor() {
-    this.pos_x = Math.random() * max_width;
-    this.pos_y = Math.random() * max_height;
+    this.pos_x = Math.random() * (max_width - 101) ;
+    this.pos_y = Math.random() * (max_height -101) ;
     this.current_x = this.pos_x;
     this.current_y = this.pos_y;
     this.diameter = Math.random() * 100;
@@ -20,7 +20,7 @@ class Ball {
 
     this.velocity_x = (Math.random() * 11) - 5
     this.velocity_y = (Math.random() * 11) - 5
-    this.mass = 6 * this.diameter
+    this.mass = 20 * Math.pow(this.diameter, 2)
     this.center_x = this.current_x + this.diameter / 2
     this.center_y = this.current_y + this.diameter / 2
     this.radius = this.diameter / 2
@@ -29,10 +29,6 @@ class Ball {
   create() {
     this.element = document.createElement("div");
     container.appendChild(this.element);
-
-    // if (((max_width - this.pos_x) <= this.diameter) || ((max_height - this.pos_y) <= this.diameter)) {
-    //   this.element.parentNode.removeChild(this.element)
-    // }
 
     this.element.style.width = `${this.diameter}px`
     this.element.style.height = `${this.diameter}px`
@@ -62,14 +58,14 @@ function generate_ball(num) {
   }
 
   //regenerate ball when it spawn outside of the container
-  function detect_outside_spawn() {
-    for (let i = 0; i < balls.length; i++) {
-      if (((max_width - balls[i].pos_x) <= balls[i].diameter) || ((max_height - balls[i].pos_y) <= balls[i].diameter)) {
-        balls.splice(i, 1)
-        detect_outside_spawn()
-      }
-    }
-  }
+  // function detect_outside_spawn() {
+  //   for (let i = 0; i < balls.length; i++) {
+  //     if (((max_width - balls[i].pos_x) <= balls[i].diameter) || ((max_height - balls[i].pos_y) <= balls[i].diameter)) {
+  //       balls.splice(i, 1)
+  //       detect_outside_spawn()
+  //     }
+  //   }
+  // }
 
   //regenerate balls when it overlaps
   function detect_overlap() {
@@ -84,18 +80,18 @@ function generate_ball(num) {
         if (distance <= (balls[i].radius + balls[j].radius)) {
           console.log("overlap on generation")
           balls.splice(j, 1)
+          balls.push(new Ball())
+          // detect_outside_spawn()
           detect_overlap()
         }
       }
     }
   }
-  detect_outside_spawn()
   detect_overlap()
 
   return balls
 }
 
-const balls = generate_ball(20)
 
 function get_distance(x1, y1, x2, y2) {
   let distance_x = x1 - x2;
@@ -119,21 +115,21 @@ function detect_boundry(balls) {
 function change_direction_x(ball1, ball2) {
   v1 = ball1.velocity_x
   v2 = ball2.velocity_x
-  ball1.velocity_x = (((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
-    (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2)
+  ball1.velocity_x = ((((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2))
 
-  ball2.velocity_x = (((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
-    (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2)
+  ball2.velocity_x = ((((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2))
 }
 
 function change_direction_y(ball1, ball2) {
   v1 = ball1.velocity_y
   v2 = ball2.velocity_y
-  ball1.velocity_y = (((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
-    (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2)
+  ball1.velocity_y = ((((ball1.mass - ball2.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((2 * ball2.mass) / (ball1.mass + ball2.mass)) * v2))
 
-  ball2.velocity_y = (((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
-    (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2)
+  ball2.velocity_y = ((((2 * ball1.mass) / (ball1.mass + ball2.mass)) * v1) +
+    (((ball2.mass - ball1.mass) / (ball1.mass + ball2.mass)) * v2))
 }
 
 
@@ -156,6 +152,7 @@ function detect_collision(balls) {
 }
 
 
+const balls = generate_ball(20)
 balls.forEach(ball => ball.create());
 
 function play() {
