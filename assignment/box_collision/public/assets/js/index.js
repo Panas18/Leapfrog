@@ -5,7 +5,7 @@ window.addEventListener("resize", () => {
   container.style.width = maxWidth + "px";
 });
 
-const balls = generateBall(100);
+const balls = generateBall(200);
 balls.forEach((ball) => ball.create());
 
 function play() {
